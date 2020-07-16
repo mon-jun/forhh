@@ -8,7 +8,7 @@ namespace AreaCalculator
         /// </summary>
         /// <param name="radius">radius of circle</param>
         /// <returns>Area of circle</returns>
-        public double CalculateArea(double radius)
+        public static double CalculateArea(double radius)
         {
             if (radius < 0)
                 throw new ArgumentException("Radius can't be less than zero");
@@ -21,7 +21,7 @@ namespace AreaCalculator
         /// <param name="secondSideOfTriangle">Length of second side</param>
         /// <param name="thirdSideOfTriangle">Length of third side</param>
         /// <returns>Area of triangle</returns>
-        public double CalculateArea(double firstSideOfTriangle, double secondSideOfTriangle, double thirdSideOfTriangle)
+        public static double CalculateArea(double firstSideOfTriangle, double secondSideOfTriangle, double thirdSideOfTriangle)
         {
             if (firstSideOfTriangle <= secondSideOfTriangle + thirdSideOfTriangle ||
                 secondSideOfTriangle <= firstSideOfTriangle + thirdSideOfTriangle ||

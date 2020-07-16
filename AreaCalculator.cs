@@ -12,7 +12,7 @@ namespace AreaCalculator
         {
             if (radius < 0)
                 throw new ArgumentException("Radius can't be less than zero");
-            Math.PI * radius * radius;
+            return Math.PI * radius * radius;
         }
         /// <summary>
         /// Calculates area of triangle by its sides.
